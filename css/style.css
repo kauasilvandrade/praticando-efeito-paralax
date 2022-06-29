@@ -23,7 +23,7 @@ body {
 
 /* CONTAINER */
 .container {
-    width: 950px;
+    max-width: 950px;
     margin: auto;
 }
 
@@ -153,21 +153,24 @@ main .secao-bg-titulo h2 {
 main .secao-bg-titulo p {
     text-align: justify;
     font-size: 1.1em;
+    line-height: 30px;
 } 
 
 main .secao-bg-titulo p strong {} 
 
 main .secao-bg-wallpaper {
-    height: 600px;
+    height: 700px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     background-attachment: fixed;
 }
 
 main .secao-bg-wallpaper:nth-of-type(2) {
     background-image: url('../imagens/wallpaper-animes.jpg');
+    height: 400px;
 }
 
 main .secao-bg-wallpaper:nth-of-type(4) {
@@ -189,6 +192,7 @@ main .secao-bg-wallpaper:nth-of-type(10) {
 main .secao-bg-wallpaper:nth-of-type(12) {
         background-image: url('../imagens/wallpaper-naruto.jpg');
 }
+
 
 /* RODAPÉ */
 footer {
