@@ -17,65 +17,194 @@
 }
 
 /* CORPO */
-body {}
+body {
+    font-family: "Source Sans Pro", Arial, Helvetica,sans-serif;
+}
 
 /* CONTAINER */
-.container {}
+.container {
+    width: 950px;
+    margin: auto;
+}
 
 /* HEADER */
-.cabecalho {}
+.cabecalho {
+    background-color: var(--cor3);
+    padding: 10px 10px 90px 10px;
+}
 
-.cabecalho .imagemNavInput {}
+.cabecalho .imagemNavInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* IMAGEM */
 .cabecalho .imagemNavInput .img-box {}
 
-.cabecalho .imagemNavInput .img-box img {}
+.cabecalho .imagemNavInput .img-box img {
+    width: 50px;
+}
 
 /* NAV */
-.cabecalho .imagemNavInput .menu {}
+.cabecalho .imagemNavInput .menu {
+    margin-left: 210px;
+}
 
-.cabecalho .imagemNavInput .menu .listaDeLinks {}
+.cabecalho .imagemNavInput .menu .listaDeLinks {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
 
 .cabecalho .imagemNavInput .menu .listaDeLinks .item {}
 
-.cabecalho .imagemNavInput .menu .listaDeLinks .item a {}
+.cabecalho .imagemNavInput .menu .listaDeLinks .item a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 0.9em;
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+
+.cabecalho .imagemNavInput .menu .listaDeLinks .item > a:hover {
+    color: var(--cor1);
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 5px;
+    transition: .1s;
+}
 
 /* SUB MENU */
-.cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu {}
+.cabecalho .imagemNavInput .menu .listaDeLinks .item:hover .subMenu {
+    display: block;
+}
 
-.cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu .listaSubMenu {}
+.cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu {
+    position: absolute; 
+    display: none;
+}
 
-.cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu {}
+.cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu .listaSubMenu {
+    list-style: none;
+    background-color: var(--cor2);
+}
+
+.cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu {
+    display: inline-block;
+    padding: 16px 14px 9px 6px;
+}
+.cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu > a:hover {
+    color: var(--cor1);
+}
 
 /* CAIXA INPUT */
-.cabecalho .imagemNavInput .input-box {}
+.cabecalho .imagemNavInput .input-box {
+    position: relative;
+}
 
-.cabecalho .imagemNavInput .input-box input {}
+.cabecalho .imagemNavInput .input-box input {
+    border: none;
+    padding: 10px 64px 10px 10px;
+    border-radius: 12px;
+    background-color: var(--cor2);
+    color: var(--cor0);
+}
 
-.cabecalho .imagemNavInput .input-box svg {}
+.cabecalho .imagemNavInput .input-box input::placeholder {
+    color: var(--cor0);
+}
+
+.cabecalho .imagemNavInput .input-box svg {
+    width: 17px;
+    position: absolute;
+    color: var(--cor0);
+    top: 27%;
+    cursor: pointer;
+    left: 87%;
+}
+
+.cabecalho .titulo {
+    margin-top: 115px;
+    text-align: center;
+}
+
+.cabecalho .titulo h1 {
+    color: white;
+}
 
 /* CONTEÚDO PRINCIPAL */
 main {}
 
-main .titulo {}
-
-main .titulo h1 {}
-
 /* SEÇÃO FUNDO ANIMES */
-main .secao-bg-titulo {}
+main .secao-bg-titulo {
+    padding: 20px;
+}
 
-main .secao-bg-titulo h2 {}
+main .secao-bg-titulo h2 {
+    text-align: center;
+    font-size: 1.8em;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
 
-main .secao-bg-titulo p {} 
+main .secao-bg-titulo p {
+    text-align: justify;
+    font-size: 1.1em;
+} 
 
 main .secao-bg-titulo p strong {} 
 
-main .secao-bg-wallpaper {}
+main .secao-bg-wallpaper {
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-attachment: fixed;
+}
+
+main .secao-bg-wallpaper:nth-of-type(2) {
+    background-image: url('../imagens/wallpaper-animes.jpg');
+}
+
+main .secao-bg-wallpaper:nth-of-type(4) {
+        background-image: url('../imagens/wallpaper-anya.jpg');
+}
+
+main .secao-bg-wallpaper:nth-of-type(6) {
+        background-image: url('../imagens/wallpaper-levi.jpg');
+}
+
+main .secao-bg-wallpaper:nth-of-type(8) {
+        background-image: url('../imagens/wallpaper-mirio.jpg');
+}
+
+main .secao-bg-wallpaper:nth-of-type(10) {
+        background-image: url('../imagens/wallpaper-kozume.jpg');
+}
+
+main .secao-bg-wallpaper:nth-of-type(12) {
+        background-image: url('../imagens/wallpaper-naruto.jpg');
+}
 
 /* RODAPÉ */
-footer {}
+footer {
+    background-color: var(--cor3);
+}
 
-footer p {}
+footer p {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
 
-footer p a {}
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+footer p a:hover {
+    color: white;
+}
