@@ -44,12 +44,23 @@ body {
 .cabecalho .imagemNavInput .img-box {}
 
 .cabecalho .imagemNavInput .img-box img {
-    width: 50px;
+    width: 70px;
 }
 
 /* NAV */
 .cabecalho .imagemNavInput .menu {
-    margin-left: 210px;
+    margin-left: 121px;
+}
+
+.cabecalho .imagemNavInput .menu button {
+    border: none;
+    background-color: transparent;
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    right: 208px;
+    top: 22px;
+    display: none;
 }
 
 .cabecalho .imagemNavInput .menu .listaDeLinks {
@@ -57,14 +68,12 @@ body {
     list-style-type: none;
 }
 
-.cabecalho .imagemNavInput .menu .listaDeLinks .item {
-    padding: 0px 10px;
-}
+.cabecalho .imagemNavInput .menu .listaDeLinks .item {}
 
 .cabecalho .imagemNavInput .menu .listaDeLinks .item a {
     padding: 10px;
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 1em;
     color: var(--cor0);
     font-weight: bold;
 }
@@ -104,6 +113,7 @@ body {
 /* CAIXA INPUT */
 .cabecalho .imagemNavInput .input-box {
     position: relative;
+    padding: 0px 65px;
 }
 
 .cabecalho .imagemNavInput .input-box input {
@@ -124,7 +134,7 @@ body {
     color: var(--cor0);
     top: 27%;
     cursor: pointer;
-    left: 87%;
+    left: 74%;
 }
 
 .cabecalho .titulo {
@@ -213,4 +223,8 @@ footer p a {
 }
 footer p a:hover {
     color: white;
+}
+
+@media (max-width: 954px) {
+    
 }
