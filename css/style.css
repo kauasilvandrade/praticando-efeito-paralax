@@ -37,6 +37,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 
 /* IMAGEM */
@@ -53,11 +54,12 @@ body {
 
 .cabecalho .imagemNavInput .menu .listaDeLinks {
     display: flex;
-    gap: 10px;
     list-style-type: none;
 }
 
-.cabecalho .imagemNavInput .menu .listaDeLinks .item {}
+.cabecalho .imagemNavInput .menu .listaDeLinks .item {
+    padding: 0px 10px;
+}
 
 .cabecalho .imagemNavInput .menu .listaDeLinks .item a {
     padding: 10px;
