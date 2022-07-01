@@ -37,7 +37,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
 }
 
 /* IMAGEM */
@@ -48,8 +47,13 @@ body {
 }
 
 /* NAV */
+.cabecalho .imagemNavInput .respo {
+    display: flex;
+    align-items: center;
+}
 .cabecalho .imagemNavInput .menu {
-    margin-left: 121px;
+    width: 100%;
+    margin-left: 20px;
 }
 
 .cabecalho .imagemNavInput .menu button {
@@ -58,8 +62,8 @@ body {
     font-size: 36px;
     color: white;
     position: absolute;
-    right: 208px;
-    top: 22px;
+    right: 8%;
+    top: 3%;
     display: none;
 }
 
@@ -82,7 +86,6 @@ body {
 .cabecalho .imagemNavInput .menu .listaDeLinks .item > a:hover {
     color: var(--cor1);
     background-color: var(--cor2);
-    padding: 10px;
     border-radius: 5px;
     transition: .1s;
 }
@@ -113,6 +116,7 @@ body {
 /* CAIXA INPUT */
 .cabecalho .imagemNavInput .input-box {
     position: relative;
+    width: 323px;
     padding: 0px 65px;
 }
 
@@ -129,12 +133,12 @@ body {
 }
 
 .cabecalho .imagemNavInput .input-box svg {
-    width: 17px;
+    width: 6%;
     position: absolute;
     color: var(--cor0);
     top: 27%;
     cursor: pointer;
-    left: 74%;
+    left: 80%;
 }
 
 .cabecalho .titulo {
@@ -225,6 +229,33 @@ footer p a:hover {
     color: white;
 }
 
-@media (max-width: 954px) {
-    
+@media (max-width: 840px) {
+
+    .imagemNavInput {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-box {
+        margin-right: 80%;
+        margin-bottom: 3%;
+    }
+
+    #botao {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    .respo {
+        flex-direction: column;
+    }
+
+    .listaDeLinks {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 }
