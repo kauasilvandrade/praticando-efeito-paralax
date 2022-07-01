@@ -51,6 +51,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 .cabecalho .imagemNavInput .menu {
     width: 100%;
 }
@@ -66,15 +67,17 @@ body {
     display: none;
 }
 
-.cabecalho .imagemNavInput .menu button:focus ~ .respo {
-    overflow: hidden;
-    height: 600px;
+.cabecalho .imagemNavInput .menu button:focus ~ .listaDeLinks {
+    height: 250px;
 }
 
 .cabecalho .imagemNavInput .menu .listaDeLinks {
     display: flex;
     list-style-type: none;
+    overflow: hidden;
+    transition: all .5s;
 }
+
 
 .cabecalho .imagemNavInput .menu .listaDeLinks .item {}
 
@@ -233,6 +236,7 @@ footer p a:hover {
     color: white;
 }
 
+
 @media (max-width: 840px) {
 
     .imagemNavInput {
@@ -303,7 +307,8 @@ footer p a:hover {
 }
 
 @media (max-width: 700px) {
-    .respo {
+    .listaDeLinks {
         height: 0;
+        display: none;
     }
 }
