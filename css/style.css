@@ -155,6 +155,7 @@ body {
 
 .cabecalho .titulo h1 {
     color: white;
+    text-transform: uppercase;
 }
 
 /* CONTEÚDO PRINCIPAL */
@@ -186,34 +187,43 @@ main .secao-bg-wallpaper {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 
     background-attachment: fixed;
 }
 
 main .secao-bg-wallpaper:nth-of-type(2) {
     background-image: url('../imagens/wallpaper-animes.jpg');
+    background-position: center center;
     height: 400px;
 }
 
 main .secao-bg-wallpaper:nth-of-type(4) {
-        background-image: url('../imagens/wallpaper-anya.jpg');
+    background-image: url('../imagens/wallpaper-anya.jpg');
+    background-position: center center;
 }
 
 main .secao-bg-wallpaper:nth-of-type(6) {
-        background-image: url('../imagens/wallpaper-levi.jpg');
+    background-image: url('../imagens/wallpaper-levi.jpg');
+    background-position: center center;
 }
 
 main .secao-bg-wallpaper:nth-of-type(8) {
-        background-image: url('../imagens/wallpaper-mirio.jpg');
+    background-image: url('../imagens/wallpaper-mirio.jpg');
+    background-position: center center;
 }
 
 main .secao-bg-wallpaper:nth-of-type(10) {
-        background-image: url('../imagens/wallpaper-kozume.jpg');
+    background-image: url('../imagens/wallpaper-kozume.jpg');
+    background-position: center bottom;
 }
 
 main .secao-bg-wallpaper:nth-of-type(12) {
-        background-image: url('../imagens/wallpaper-naruto.jpg');
+    background-image: url('../imagens/wallpaper-naruto.jpg');
+    background-position: center center;
+}
+
+#kozume-position {
+
 }
 
 
