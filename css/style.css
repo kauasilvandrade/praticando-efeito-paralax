@@ -56,7 +56,13 @@ body {
     width: 100%;
 }
 
-.cabecalho .imagemNavInput .menu button {
+.cabecalho .imagemNavInput .menu {}
+
+.cabecalho .imagemNavInput .menu #botao {
+    display: none;
+}
+
+.cabecalho .imagemNavInput .menu .checkbtn {
     border: none;
     background-color: transparent;
     font-size: 36px;
@@ -67,7 +73,7 @@ body {
     display: none;
 }
 
-.cabecalho .imagemNavInput .menu button:focus ~ .listaDeLinks {
+.cabecalho .imagemNavInput .menu #botao:checked ~ .listaDeLinks {
     height: 250px;
 }
 
@@ -79,7 +85,9 @@ body {
 }
 
 
-.cabecalho .imagemNavInput .menu .listaDeLinks .item {}
+.cabecalho .imagemNavInput .menu .listaDeLinks .item {
+    padding: 10px;
+}
 
 .cabecalho .imagemNavInput .menu .listaDeLinks .item a {
     padding: 10px;
@@ -222,10 +230,6 @@ main .secao-bg-wallpaper:nth-of-type(12) {
     background-position: center center;
 }
 
-#kozume-position {
-
-}
-
 
 /* RODAPÉ */
 footer {
@@ -247,6 +251,7 @@ footer p a:hover {
 }
 
 
+
 @media (max-width: 840px) {
 
     .imagemNavInput {
@@ -259,8 +264,16 @@ footer p a:hover {
         margin-bottom: 3%;
     }
 
-    #botao {
+    .cabecalho .imagemNavInput .menu .listaDeLinks .item {
+        padding: 1px;
+    }    
+
+    .cabecalho .imagemNavInput .menu .checkbtn  {
         display: flex;
+    }
+
+    #botao {
+        display: none;
     }
 
 }
