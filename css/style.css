@@ -1,0 +1,609 @@
+/* PERMISSÃ0 DE ACENTUAÇÕES NO SITE  */
+@charset "UTF-8";
+
+/* FONTES  */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+/* PALETA DE CORES */
+:root {
+    --cor0: #ffffff;
+    --cor1: #DD3333;
+    --cor2: #1A1A1A;
+    --cor3: #000000;
+}
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    font-family: "Source Sans Pro", Arial, Helvetica,sans-serif;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 950px;
+    margin: auto;
+}
+
+/* HEADER */
+.cabecalho {
+    background-color: var(--cor3);
+    padding: 2rem 0;
+}
+
+/* POSICIONAMENTO IMG NAV INPUT */
+.position-img-nav-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* IMAGEM */
+.position-img-nav-input .img-box {}
+
+.position-img-nav-input .img-box img {
+    width: 4rem;
+}
+
+/* MENU */
+.position-img-nav-input .menu {}
+
+.position-img-nav-input .menu #botao {
+    display: none;
+}
+
+.position-img-nav-input .menu .checkbtn {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    left: 90%;
+    cursor: pointer;
+    top: 6.4%;
+    display: none;
+}
+
+.position-img-nav-input .menu .listaDeLinks {
+    display: flex;
+    list-style: none;
+}
+
+.position-img-nav-input .menu .listaDeLinks .item {
+    position: relative;
+}
+
+.listaDeLinks .item #btnSubMenu {
+    display: none;
+}
+
+.listaDeLinks .item .botaoSubMenu {
+    display: none;
+}
+
+.position-img-nav-input .menu .listaDeLinks .item a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-size: 1.3em;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.position-img-nav-input .menu .listaDeLinks .item a:hover {
+    color: var(--cor1);
+    transition: all .5s;
+}
+
+/* SUB MENU */
+.listaDeLinks .item:hover .listaSubMenu {
+    display: block;
+    transition: all .5s;
+}
+
+.listaDeLinks .item .botaoSubMenu img {}
+
+/* LISTA SUB MENU */
+.listaDeLinks .item .listaSubMenu {
+    background-color: var(--cor2);
+    position: absolute;
+    left: 4%;
+    width: 16rem;
+    padding: 0.4rem;
+    display: none;
+    list-style: none;
+}
+
+.listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu {
+    display: inline;
+}
+
+.listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu > a {}
+
+.listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu > a:hover {}
+
+/* CAIXA INPUT */
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    padding: 0.5rem 1.7rem;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid black;
+}
+
+
+.input-box svg {
+    width: 1.3rem;
+    position: absolute;
+    left: 82.7%;
+    top: 18%;
+    cursor: pointer;
+}
+
+.cabecalho .titulo {
+    padding: 5rem 0;
+}
+
+.cabecalho .titulo h1 {
+    text-align: center;
+    font-variant: small-caps;
+    color: var(--cor0);
+    font-size: 4em;
+    font-family: 'Passion One', cursive;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {}
+
+/* SEÇÃO FUNDO ANIMES */
+main .secao-bg-titulo {
+    padding: 20px;
+    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 51%);
+}
+
+main .secao-bg-titulo h2 {
+    text-align: center;
+    font-size: 1.8em;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
+    font-variant: small-caps;
+}
+
+main .secao-bg-titulo p {
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+main .secao-bg-titulo p strong {} 
+
+main .secao-bg-wallpaper {
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+main #img1 {
+    background-image: url(../imagens/wallpaper-animes.jpg);
+}
+main #img2 {
+    background-image: url(../imagens/wallpaper-anya.jpg);
+}
+main #img3 {
+    background-image: url(../imagens/wallpaper-levi.jpg);
+}
+main #img4 {
+    background-image: url(../imagens/wallpaper-mirio.jpg);
+}
+main #img5 {
+    background-image: url(../imagens/wallpaper-kozume.jpg);
+}
+main #img6 {
+    background-image: url(../imagens/wallpaper-naruto.jpg);
+}
+
+/* RODAPÉ */
+footer {
+    background-color: var(--cor3);
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+footer p a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 800px){
+
+    .position-img-nav-input {
+        justify-content: space-around;
+    }
+
+    .position-img-nav-input .menu #botao:checked ~ .listaDeLinks {
+        right: 0;
+    }
+    
+    .position-img-nav-input .menu .checkbtn {
+        display: block;
+    }
+
+    .listaDeLinks {
+        position: fixed;
+        height: 100vh;
+        width: 17rem;
+        top: 85px;
+        background-color: #080808;
+        right: -100%;
+        flex-direction: column;
+        transition: all .5s;
+    }
+
+    .position-img-nav-input .menu .listaDeLinks .item {
+        border-bottom: 1px solid rgb(0, 0, 0);
+        border-top: 1px solid rgb(0, 0, 0);
+        margin-bottom: 1rem;
+    }
+
+    .position-img-nav-input .menu .listaDeLinks .item a {
+        display: block;
+        width: 100%;
+    }
+
+    .position-img-nav-input .menu .listaDeLinks .item a:hover {
+        background-color: var(--cor1);
+        color: white;
+    }
+
+    .listaDeLinks .item #btnSubMenu:checked ~ .listaSubMenu {
+        right: 0;
+    }
+    
+    .listaDeLinks .item .botaoSubMenu {
+        display: block;
+        left: 14rem;
+        top: 0.8rem;
+        position: absolute;
+    }
+
+    .listaDeLinks .item .listaSubMenu {
+        background-color: #080808;
+        width: 17rem;
+        padding: 0;
+        right: -100%;
+        z-index: 1;
+        left: unset;
+        position: fixed;
+    }
+
+    .listaDeLinks .item .listaSubMenu .itemSubMenu a {
+        border-bottom: 1px solid rgb(0, 0, 0);
+        display: block;
+    }
+
+    .input-box {
+        margin-right: 4rem;
+    }
+}/* PERMISSÃ0 DE ACENTUAÇÕES NO SITE  */
+@charset "UTF-8";
+
+/* FONTES  */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+/* PALETA DE CORES */
+:root {
+    --cor0: #ffffff;
+    --cor1: #DD3333;
+    --cor2: #1A1A1A;
+    --cor3: #000000;
+}
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    font-family: "Source Sans Pro", Arial, Helvetica,sans-serif;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 950px;
+    margin: auto;
+}
+
+/* HEADER */
+.cabecalho {
+    background-color: var(--cor3);
+    padding: 2rem 0;
+}
+
+/* POSICIONAMENTO IMG NAV INPUT */
+.position-img-nav-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* IMAGEM */
+.position-img-nav-input .img-box {}
+
+.position-img-nav-input .img-box img {
+    width: 4rem;
+}
+
+/* MENU */
+.position-img-nav-input .menu {}
+
+.position-img-nav-input .menu #botao {
+    display: none;
+}
+
+.position-img-nav-input .menu .checkbtn {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    left: 90%;
+    cursor: pointer;
+    top: 6.4%;
+    display: none;
+}
+
+.position-img-nav-input .menu .listaDeLinks {
+    display: flex;
+    list-style: none;
+}
+
+.position-img-nav-input .menu .listaDeLinks .item {
+    position: relative;
+}
+
+.listaDeLinks .item #btnSubMenu {
+    display: none;
+}
+
+.listaDeLinks .item .botaoSubMenu {
+    display: none;
+}
+
+.position-img-nav-input .menu .listaDeLinks .item a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-size: 1.3em;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.position-img-nav-input .menu .listaDeLinks .item a:hover {
+    color: var(--cor1);
+    transition: all .5s;
+}
+
+/* SUB MENU */
+.listaDeLinks .item:hover .listaSubMenu {
+    display: block;
+    transition: all .5s;
+}
+
+.listaDeLinks .item .botaoSubMenu img {}
+
+/* LISTA SUB MENU */
+.listaDeLinks .item .listaSubMenu {
+    background-color: var(--cor2);
+    position: absolute;
+    left: 4%;
+    width: 16rem;
+    padding: 0.4rem;
+    display: none;
+    list-style: none;
+}
+
+.listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu {
+    display: inline;
+}
+
+.listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu > a {}
+
+.listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu > a:hover {}
+
+/* CAIXA INPUT */
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    padding: 0.5rem 1.7rem;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid black;
+}
+
+
+.input-box svg {
+    width: 1.3rem;
+    position: absolute;
+    left: 82.7%;
+    top: 18%;
+    cursor: pointer;
+}
+
+.cabecalho .titulo {
+    padding: 5rem 0;
+}
+
+.cabecalho .titulo h1 {
+    text-align: center;
+    font-variant: small-caps;
+    color: var(--cor0);
+    font-size: 4em;
+    font-family: 'Passion One', cursive;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {}
+
+/* SEÇÃO FUNDO ANIMES */
+main .secao-bg-titulo {
+    padding: 20px;
+    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 51%);
+}
+
+main .secao-bg-titulo h2 {
+    text-align: center;
+    font-size: 1.8em;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
+    font-variant: small-caps;
+}
+
+main .secao-bg-titulo p {
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+main .secao-bg-titulo p strong {} 
+
+main .secao-bg-wallpaper {
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+main #img1 {
+    background-image: url(../imagens/wallpaper-animes.jpg);
+}
+main #img2 {
+    background-image: url(../imagens/wallpaper-anya.jpg);
+}
+main #img3 {
+    background-image: url(../imagens/wallpaper-levi.jpg);
+}
+main #img4 {
+    background-image: url(../imagens/wallpaper-mirio.jpg);
+}
+main #img5 {
+    background-image: url(../imagens/wallpaper-kozume.jpg);
+}
+main #img6 {
+    background-image: url(../imagens/wallpaper-naruto.jpg);
+}
+
+/* RODAPÉ */
+footer {
+    background-color: var(--cor3);
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+footer p a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 800px){
+
+    .position-img-nav-input {
+        justify-content: space-around;
+    }
+
+    .position-img-nav-input .menu #botao:checked ~ .listaDeLinks {
+        right: 0;
+    }
+    
+    .position-img-nav-input .menu .checkbtn {
+        display: block;
+    }
+
+    .listaDeLinks {
+        position: fixed;
+        height: 100vh;
+        width: 17rem;
+        top: 85px;
+        background-color: #080808;
+        right: -100%;
+        flex-direction: column;
+        transition: all .5s;
+    }
+
+    .position-img-nav-input .menu .listaDeLinks .item {
+        border-bottom: 1px solid rgb(0, 0, 0);
+        border-top: 1px solid rgb(0, 0, 0);
+        margin-bottom: 1rem;
+    }
+
+    .position-img-nav-input .menu .listaDeLinks .item a {
+        display: block;
+        width: 100%;
+    }
+
+    .position-img-nav-input .menu .listaDeLinks .item a:hover {
+        background-color: var(--cor1);
+        color: white;
+    }
+
+    .listaDeLinks .item #btnSubMenu:checked ~ .listaSubMenu {
+        right: 0;
+    }
+    
+    .listaDeLinks .item .botaoSubMenu {
+        display: block;
+        left: 14rem;
+        top: 0.8rem;
+        position: absolute;
+    }
+
+    .listaDeLinks .item .listaSubMenu {
+        background-color: #080808;
+        width: 17rem;
+        padding: 0;
+        right: -100%;
+        z-index: 1;
+        left: unset;
+        position: fixed;
+    }
+
+    .listaDeLinks .item .listaSubMenu .itemSubMenu a {
+        border-bottom: 1px solid rgb(0, 0, 0);
+        display: block;
+    }
+
+    .input-box {
+        margin-right: 4rem;
+    }
+}
