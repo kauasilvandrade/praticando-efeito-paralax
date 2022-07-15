@@ -28,143 +28,7 @@ body {
 }
 
 /* HEADER */
-.cabecalho {
-    background-color: var(--cor3);
-    padding: 10px 10px 90px 10px;
-}
 
-.cabecalho .imagemNavInput {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* IMAGEM */
-.cabecalho .imagemNavInput .img-box {}
-
-.cabecalho .imagemNavInput .img-box img {
-    width: 70px;
-}
-
-/* NAV */
-.cabecalho .imagemNavInput .respo {
-    display: flex;
-    align-items: center;
-}
-
-.cabecalho .imagemNavInput .menu {
-    width: 100%;
-}
-
-.cabecalho .imagemNavInput .menu {}
-
-.cabecalho .imagemNavInput .menu #botao {
-    display: none;
-}
-
-.cabecalho .imagemNavInput .menu .checkbtn {
-    border: none;
-    background-color: transparent;
-    font-size: 36px;
-    color: white;
-    position: absolute;
-    right: 8%;
-    top: 3%;
-    display: none;
-}
-
-.cabecalho .imagemNavInput .menu #botao:checked ~ .listaDeLinks {
-    height: 250px;
-}
-
-.cabecalho .imagemNavInput .menu .listaDeLinks {
-    display: flex;
-    list-style-type: none;
-    overflow: hidden;
-    transition: all .5s;
-}
-
-
-.cabecalho .imagemNavInput .menu .listaDeLinks .item {
-    padding: 10px;
-}
-
-.cabecalho .imagemNavInput .menu .listaDeLinks .item a {
-    padding: 10px;
-    text-decoration: none;
-    font-size: 1em;
-    color: var(--cor0);
-    font-weight: bold;
-}
-
-
-.cabecalho .imagemNavInput .menu .listaDeLinks .item > a:hover {
-    color: var(--cor1);
-    background-color: var(--cor2);
-    border-radius: 5px;
-    transition: .1s;
-}
-
-/* SUB MENU */
-.cabecalho .imagemNavInput .menu .listaDeLinks .item:hover .subMenu {
-    display: block;
-}
-
-.cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu {
-    position: absolute; 
-    display: none;
-}
-
-.cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu .listaSubMenu {
-    list-style: none;
-    background-color: var(--cor2);
-}
-
-.cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu {
-    display: inline-block;
-    padding: 16px 14px 9px 6px;
-}
-.cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu > a:hover {
-    color: var(--cor1);
-}
-
-/* CAIXA INPUT */
-.cabecalho .imagemNavInput .input-box {
-    position: relative;
-    width: 323px;
-    padding: 0px 65px;
-}
-
-.cabecalho .imagemNavInput .input-box input {
-    border: none;
-    padding: 10px 45px 10px 10px;
-    border-radius: 12px;
-    background-color: var(--cor2);
-    color: var(--cor0);
-}
-
-.cabecalho .imagemNavInput .input-box input::placeholder {
-    color: var(--cor0);
-}
-
-.cabecalho .imagemNavInput .input-box svg {
-    width: 6%;
-    position: absolute;
-    color: var(--cor0);
-    top: 27%;
-    cursor: pointer;
-    left: 80%;
-}
-
-.cabecalho .titulo {
-    margin-top: 115px;
-    text-align: center;
-}
-
-.cabecalho .titulo h1 {
-    color: white;
-    text-transform: uppercase;
-}
 
 /* CONTEÚDO PRINCIPAL */
 main {}
@@ -195,41 +59,28 @@ main .secao-bg-wallpaper {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-
     background-attachment: fixed;
-}
-
-main .secao-bg-wallpaper:nth-of-type(2) {
-    background-image: url('../imagens/wallpaper-animes.jpg');
-    background-position: center center;
-    height: 400px;
-}
-
-main .secao-bg-wallpaper:nth-of-type(4) {
-    background-image: url('../imagens/wallpaper-anya.jpg');
     background-position: center center;
 }
 
-main .secao-bg-wallpaper:nth-of-type(6) {
-    background-image: url('../imagens/wallpaper-levi.jpg');
-    background-position: center center;
+main #img1 {
+    background-image: url(../imagens/wallpaper-animes.jpg);
 }
-
-main .secao-bg-wallpaper:nth-of-type(8) {
-    background-image: url('../imagens/wallpaper-mirio.jpg');
-    background-position: center center;
+main #img2 {
+    background-image: url(../imagens/wallpaper-anya.jpg);
 }
-
-main .secao-bg-wallpaper:nth-of-type(10) {
-    background-image: url('../imagens/wallpaper-kozume.jpg');
-    background-position: center bottom;
+main #img3 {
+    background-image: url(../imagens/wallpaper-levi.jpg);
 }
-
-main .secao-bg-wallpaper:nth-of-type(12) {
-    background-image: url('../imagens/wallpaper-naruto.jpg');
-    background-position: center center;
+main #img4 {
+    background-image: url(../imagens/wallpaper-mirio.jpg);
 }
-
+main #img5 {
+    background-image: url(../imagens/wallpaper-kozume.jpg);
+}
+main #img6 {
+    background-image: url(../imagens/wallpaper-naruto.jpg);
+}
 
 /* RODAPÉ */
 footer {
@@ -248,90 +99,4 @@ footer p a {
 }
 footer p a:hover {
     color: white;
-}
-
-
-
-@media (max-width: 840px) {
-
-    .imagemNavInput {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .img-box {
-        margin-right: 80%;
-        margin-bottom: 3%;
-    }
-
-    .cabecalho .imagemNavInput .menu .listaDeLinks .item {
-        padding: 1px;
-    }    
-
-    .cabecalho .imagemNavInput .menu .checkbtn  {
-        display: flex;
-    }
-
-    #botao {
-        display: none;
-    }
-
-}
-
-@media (max-width: 770px) {
-
-    .respo {
-        width: 100%;
-        flex-direction: column;
-        margin: auto;
-    }
-
-    .menu {
-        width: 574px
-    }
-
-    .listaDeLinks {
-        flex-direction: column;
-        padding: 0px;
-        margin-bottom: 10px;
-    }
-
-    .item {
-        margin-bottom: 1%;
-        text-align: center;
-    }
-
-    .item a {
-        width: 100%;
-        display: block;
-    }
-
-    a:hover {
-        color: var(--cor1);
-        background-color: var(--cor2);
-        border-radius: 5px;
-        transition: .1s;
-    }
-
-    .cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu {
-        display: block;
-        position: unset;
-    }
-
-    .cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu .listaSubMenu  {
-        background-color: var(--cor3);
-    }
-
-    .cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu {
-        padding: 0;
-        width: 100%;
-    }
-
-}
-
-@media (max-width: 700px) {
-    .listaDeLinks {
-        height: 0;
-        display: none;
-    }
 }
