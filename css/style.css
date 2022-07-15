@@ -1,6 +1,9 @@
 /* PERMISSÃ0 DE ACENTUAÇÕES NO SITE  */
 @charset "UTF-8";
 
+/* FONTES  */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
 /* PALETA DE CORES */
 :root {
     --cor0: #ffffff;
@@ -28,31 +31,69 @@ body {
 }
 
 /* HEADER */
-.cabecalho {}
+.cabecalho {
+    background-color: var(--cor3);
+    padding: 2rem 0;
+}
 
 /* POSICIONAMENTO IMG NAV INPUT */
-.position-img-nav-input {}
+.position-img-nav-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* IMAGEM */
 .position-img-nav-input .img-box {}
 
-.position-img-nav-input .img-box img {}
+.position-img-nav-input .img-box img {
+    width: 4rem;
+}
 
 /* MENU */
 .position-img-nav-input .menu {}
 
-.position-img-nav-input .menu #botao {}
+.position-img-nav-input .menu #botao {
+    display: none;
+}
 
-.position-img-nav-input .menu .checkbtn {}
+.position-img-nav-input .menu .checkbtn {
+    display: none;
+}
 
-.position-img-nav-input .menu .listaDeLinks {}
+.position-img-nav-input .menu .listaDeLinks {
+    display: flex;
+    list-style: none;
+}
 
-.position-img-nav-input .menu .listaDeLinks .item a {}
+.position-img-nav-input .menu .listaDeLinks .item {}
+
+.position-img-nav-input .menu .listaDeLinks .item a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-size: 1.3em;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.position-img-nav-input .menu .listaDeLinks .item a:hover {
+    color: var(--cor1);
+    transition: all .5s;
+}
 
 /* SUB MENU */
-.listaDeLinks .item .subMenu {}
-.listaDeLinks .item .subMenu #btnSubMenu {}
-.listaDeLinks .item .subMenu .botaoSubMenu {}
+.listaDeLinks .item .subMenu {
+    display: none;
+}
+
+.listaDeLinks .item .subMenu #btnSubMenu {
+    display: none;
+}
+
+.listaDeLinks .item .subMenu .botaoSubMenu {
+    display: none;
+}
+
 .listaDeLinks .item .subMenu .botaoSubMenu img {}
 
 /* LISTA SUB MENU */
@@ -65,13 +106,33 @@ body {
 /* CAIXA INPUT */
 .input-box {}
 
-.input-box input {}
+.input-box input {
+    padding: 0.5rem 1.7rem;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid black;
+}
 
-.input-box svg {}
 
-.cabecalho .titulo {}
+.input-box svg {
+    width: 1.3rem;
+    position: absolute;
+    left: 82.7%;
+    top: 8.5%;
+    cursor: pointer;
+}
 
-.cabecalho .titulo h1 {}
+.cabecalho .titulo {
+    padding: 5rem 0;
+}
+
+.cabecalho .titulo h1 {
+    text-align: center;
+    font-variant: small-caps;
+    color: var(--cor0);
+    font-size: 4em;
+    font-family: 'Passion One', cursive;
+}
 
 /* CONTEÚDO PRINCIPAL */
 main {}
@@ -87,12 +148,14 @@ main .secao-bg-titulo h2 {
     border-bottom: 2px solid black;
     padding-bottom: 15px;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
 }
 
 main .secao-bg-titulo p {
     text-align: justify;
     font-size: 1.1em;
-    line-height: 30px;
+    line-height: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 } 
 
 main .secao-bg-titulo p strong {} 
