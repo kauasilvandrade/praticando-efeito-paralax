@@ -28,7 +28,50 @@ body {
 }
 
 /* HEADER */
+.cabecalho {}
 
+/* POSICIONAMENTO IMG NAV INPUT */
+.position-img-nav-input {}
+
+/* IMAGEM */
+.position-img-nav-input .img-box {}
+
+.position-img-nav-input .img-box img {}
+
+/* MENU */
+.position-img-nav-input .menu {}
+
+.position-img-nav-input .menu #botao {}
+
+.position-img-nav-input .menu .checkbtn {}
+
+.position-img-nav-input .menu .listaDeLinks {}
+
+.position-img-nav-input .menu .listaDeLinks .item a {}
+
+/* SUB MENU */
+.listaDeLinks .item .subMenu {}
+.listaDeLinks .item .subMenu #btnSubMenu {}
+.listaDeLinks .item .subMenu .botaoSubMenu {}
+.listaDeLinks .item .subMenu .botaoSubMenu img {}
+
+/* LISTA SUB MENU */
+.listaDeLinks .item .subMenu .listaSubMenu {}
+
+.listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu {}
+
+.listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu a {}
+
+/* CAIXA INPUT */
+.input-box {}
+
+.input-box input {}
+
+.input-box svg {}
+
+.cabecalho .titulo {}
+
+.cabecalho .titulo h1 {}
 
 /* CONTEÚDO PRINCIPAL */
 main {}
