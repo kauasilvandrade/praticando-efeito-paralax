@@ -232,6 +232,7 @@ footer p a {
 }
 footer p a:hover {
     color: white;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 800px){
