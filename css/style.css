@@ -77,6 +77,7 @@ body {
     cursor: pointer;
     z-index: 2;
     top: 1%;
+    transition: all .5s;
     opacity: 0;
 }
 
