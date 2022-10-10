@@ -19,6 +19,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
 /* CORPO */
 body {
     font-family: "Source Sans Pro", Arial, Helvetica,sans-serif;
@@ -33,33 +38,38 @@ body {
 /* HEADER */
 .cabecalho {
     background-color: var(--cor3);
-    padding: 2rem 0;
 }
 
 /* POSICIONAMENTO IMG NAV INPUT */
 .position-img-nav-input {
+    background-color: black;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 99vw;
+    padding-block: 0.3rem;
+    left: 0;
+    justify-content: center;
+    gap: 5.5rem;
 }
 
 /* IMAGEM */
-.position-img-nav-input .img-box {}
+.img-box {}
 
-.position-img-nav-input .img-box img {
+.img-box img {
     width: 4rem;
 }
 
 /* MENU */
-.position-img-nav-input .menu {}
+.menu {}
 
-.position-img-nav-input .menu #botao {
+.menu #botao {
     display: none;
 }
 
-.position-img-nav-input .menu .checkbtn {}
+.menu .checkbtn {}
 
-.position-img-nav-input .menu .checkbtn .fa {
+.menu .checkbtn .fa {
     color: white;
     font-size: 2em;
     position: absolute;
@@ -69,7 +79,7 @@ body {
     display: none;
 }
 
-.position-img-nav-input .menu .checkbtn .fa-solid {
+.menu .checkbtn .fa-solid {
     color: white;
     font-size: 2em;
     position: fixed;
@@ -81,12 +91,12 @@ body {
     opacity: 0;
 }
 
-.position-img-nav-input .menu .listaDeLinks {
+.menu .listaDeLinks {
     display: flex;
     list-style: none;
 }
 
-.position-img-nav-input .menu .listaDeLinks .item {
+.menu .listaDeLinks .item {
     position: relative;
 }
 
@@ -98,7 +108,7 @@ body {
     display: none;
 }
 
-.position-img-nav-input .menu .listaDeLinks .item a {
+.menu .listaDeLinks .item a {
     text-decoration: none;
     color: var(--cor0);
     font-size: 1.3em;
@@ -106,7 +116,7 @@ body {
     font-weight: bold;
 }
 
-.position-img-nav-input .menu .listaDeLinks .item a:hover {
+.menu .listaDeLinks .item a:hover {
     color: var(--cor1);
     transition: all .5s;
 }
@@ -136,10 +146,6 @@ body {
     display: inline;
 }
 
-.listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu > a {}
-
-.listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu > a:hover {}
-
 /* CAIXA INPUT */
 .input-box {
     position: relative;
@@ -152,7 +158,6 @@ body {
     border: 2px solid black;
 }
 
-
 .input-box svg {
     width: 1.3rem;
     position: absolute;
@@ -162,7 +167,7 @@ body {
 }
 
 .cabecalho .titulo {
-    padding: 5rem 0;
+    padding: 9rem 0 5rem 0;
 }
 
 .cabecalho .titulo h1 {
@@ -177,12 +182,12 @@ body {
 main {}
 
 /* SEÇÃO FUNDO ANIMES */
-main .secao-bg-titulo {
+.secao-bg-titulo {
     padding: 20px;
     box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 51%);
 }
 
-main .secao-bg-titulo h2 {
+.secao-bg-titulo h2 {
     text-align: center;
     font-size: 1.8em;
     border-bottom: 2px solid black;
@@ -192,17 +197,17 @@ main .secao-bg-titulo h2 {
     font-variant: small-caps;
 }
 
-main .secao-bg-titulo p {
+.secao-bg-titulo p {
     text-align: justify;
     font-size: 1.1em;
     line-height: 2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 } 
 
-main .secao-bg-titulo p strong {} 
+.secao-bg-titulo p strong {} 
 
-main .secao-bg-wallpaper {
-    height: 700px;
+.secao-bg-wallpaper {
+    height: 90vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,22 +215,22 @@ main .secao-bg-wallpaper {
     background-position: center center;
 }
 
-main #img1 {
+#img1 {
     background-image: url(../imagens/wallpaper-animes.jpg);
 }
-main #img2 {
+#img2 {
     background-image: url(../imagens/wallpaper-anya.jpg);
 }
-main #img3 {
+#img3 {
     background-image: url(../imagens/wallpaper-levi.jpg);
 }
-main #img4 {
+#img4 {
     background-image: url(../imagens/wallpaper-mirio.jpg);
 }
-main #img5 {
+#img5 {
     background-image: url(../imagens/wallpaper-kozume.jpg);
 }
-main #img6 {
+#img6 {
     background-image: url(../imagens/wallpaper-naruto.jpg);
 }
 
