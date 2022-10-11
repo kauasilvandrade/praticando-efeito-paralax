@@ -99,8 +99,8 @@ body {
     position: relative;
 }
 
-.input-box input {
-    padding: 0.5rem 1.7rem;
+.input-box .input-busca {
+    padding: 0.5rem 1.7rem 0.5rem 0.6rem;
     border-radius: 10px;
     outline: none;
     border: 2px solid black;
@@ -239,7 +239,6 @@ footer p a:hover {
     }
     
     /* CLASSE ATIVADA COM JAVASCRIPT */
-    .menu .btn-close.ativado {}
 
     .menu .listaDeLinks.ativado {
         visibility: visible;
@@ -282,5 +281,33 @@ footer p a:hover {
 
     .input-box {
         position: relative;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .menu .listaDeLinks.ativado {
+        height: calc(25.5rem - 5rem);
+        padding-top: 3rem;
+    }
+    
+    .input-box{
+        display: none;
+    }
+
+    .input-box.ativado{
+        display: block;
+    }
+
+    .input-box .input-busca {
+        border: none;
+        position: fixed;
+        padding: 0.6rem 1.7rem 0.6rem 0.6rem;
+        height: 2.3rem;
+        left: 1rem;
+        z-index: 2;
+        top: 5.2rem;
+        width: 90%;
+        transition: .5s;
     }
 }
