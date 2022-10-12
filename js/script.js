@@ -2,7 +2,7 @@ const btnOpen = document.querySelector('.btn-open');
 const hamburguer = document.querySelector('.hamburguer')
 const Menu = document.querySelector('.listaDeLinks');
 const inputBusca = document.querySelector('.input-busca');
-const linkMenu = document.querySelector('.link');
+const linkMenu = document.querySelectorAll('.link');
 
 function mudouTamanho() {
     if (window.innerWidth <= 968) {

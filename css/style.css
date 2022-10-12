@@ -310,8 +310,9 @@ footer p a:hover {
     .input-box .input-busca.ativado{
         height: 2.3rem;
         padding: 0.6rem 1.7rem 0.6rem 0.6rem;
+        visibility: visible;
     }
-
+    
     .input-box .input-busca {
         border: none;
         position: fixed;
@@ -321,6 +322,7 @@ footer p a:hover {
         z-index: 2;
         top: 5.2rem;
         width: 90%;
-        transition: .5s;
+        visibility: hidden;
+        overflow-y: hidden;
     }
 }
