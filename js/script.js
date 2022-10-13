@@ -26,7 +26,7 @@ btnOpen.addEventListener('click', () => {
 
 function permancecerInput() {
     if (inputBusca.classList.contains('ativado')) {
-        inputBusca.classList.add('ativado')
+        inputBusca.classList.contains('ativado')
     } else {
         inputBusca.classList.remove('ativado')
     }
