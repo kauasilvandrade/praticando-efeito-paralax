@@ -24,10 +24,13 @@ btnOpen.addEventListener('click', () => {
     inputBusca.classList.toggle('ativado');
 })
 
-inputBusca.addEventListener('click', () => {
-    inputBusca.classList.contains('ativado');
-    busca.style.display = 'block';
-})
+function permancecerInput() {
+    if (inputBusca.classList.contains('ativado')) {
+        inputBusca.classList.add('ativado')
+    } else {
+        inputBusca.classList.remove('ativado')
+    }
+}
 
 linkMenu1.addEventListener('click', () => {
     hamburguer.classList.remove('ativado');
