@@ -277,10 +277,10 @@ footer p a:hover {
         z-index: 2;
         top: 4.8rem;
         width: 100%;
-        transition: .5s;
         text-align: center;
         visibility: hidden;
         overflow-y: hidden;
+        transition: .5s;
     }
 
     .menu .listaDeLinks .item a {
