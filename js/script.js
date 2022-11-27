@@ -1,19 +1,53 @@
-const btnOpen = document.querySelector('.btn-open');
-const hamburguer = document.querySelector('.hamburguer')
-const Menu = document.querySelector('.listaDeLinks');
-const inputBusca = document.querySelector('.input-busca');
 
-function mudouTamanho() {
-    if (window.innerWidth <= 968) {
-        hamburguer.classList.remove('ativado');
-        Menu.classList.remove('ativado');
-        caixaInput.classList.remove('ativado');
-        inputBusca.classList.remove('ativado');
+// FUNCÃO PARA ABRIR E FECHAR MENU
+function menuShow() {
+
+    // MENU
+    const Menu = document.querySelector('.listaDeLinks');
+    Menu.classList.toggle('ativado');
+    
+    // ICONE HAMBURGUER
+    const hamburguer = document.querySelector('.hamburguer');   
+    hamburguer.classList.toggle('ativado');
+    
+    // BUSCA
+    const inputBusca = document.querySelector('.input-busca');
+    inputBusca.classList.toggle('ativado');
+
+    // FUNÇÃO FECHAR MENU AO CLICAR NO LINK
+    function fecharMenuLink() {
+
+        // MENU
+        if (Menu.classList.contains('ativado')) {
+
+            Menu.classList.remove('ativado');
+            
+        }
+        
+        // ICONE HAMBURGUER
+        if (hamburguer.classList.contains('ativado')) {
+
+            hamburguer.classList.remove('ativado');
+
+        } 
+        
+        // BUSCA
+        if (inputBusca.classList.contains('ativado')) {
+
+            inputBusca.classList.remove('ativado');
+
+        }
+        
     }
+
+    const linkFecharMenu = document.querySelectorAll('.irParaSecao');
+
+    linkFecharMenu.forEach((irParaSecao) =>
+        irParaSecao.addEventListener('click', fecharMenuLink)
+    );
+
 }
 
-btnOpen.addEventListener('click', () => {
-    hamburguer.classList.toggle('ativado');
-    Menu.classList.toggle('ativado');
-    inputBusca.classList.toggle('ativado');
-})
+const btnOpen = document.querySelector('.btn-open');
+
+btnOpen.addEventListener('click', menuShow);
